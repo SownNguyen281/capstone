@@ -1,0 +1,249 @@
+*{
+    font-family: 'Jost', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER CSS  */
+.header {
+    background-color: #fff;
+    position: fixed;
+    top: 40px;
+    right: 0;
+    left: 0;
+    z-index: 10;
+}
+.container {
+    margin: auto;
+    max-width: 80%;
+}
+.header .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.header .header-left a {
+    text-decoration: none;
+    color: #189a46;
+}
+.header .header-right .menu {
+    display: flex;
+    align-items: center;
+}
+.header .header-right .menu-item {
+    margin-left: 30px;
+    list-style: none;
+    position: relative;
+    
+}
+
+.header .header-right .menu-item a {
+    text-decoration: none;
+    color: #0c0c0c;
+    font-size: 1.2em;
+    font-weight: 400;
+    
+    transition: all .5s;
+}
+
+.header .header-right .item3 a{
+    color: #189a46;
+}
+
+.header .header-right .menu-item:hover a{
+    color: #189a46;
+    border-bottom: 1px solid #189a46;
+    
+}
+
+
+
+/* CAROUSEL CSS  */
+.carousel {
+    margin-top: 90px;
+    background: url(../img/banner4.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+    display: grid;
+    align-items: center;
+    padding: 1em 0;
+    text-align: center;
+}
+.carousel::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    min-height: 100%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-color: #0c0c0c;
+    opacity: .6;
+}
+.carousel .container {
+    padding: 50px 0;
+}
+.carousel .title {
+    font-size: 50px;
+    font-weight: 600;
+    color: #fff;
+}
+.carousel li {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #fff;
+}
+.carousel li a{
+    text-decoration: none;
+    color: #189a46;
+}
+
+/* gallery */
+.gallery {
+    background-color: #fff;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.gallery .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.gallery .title {
+    margin: 50px 0;
+}
+.gallery .title h3 {
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 2em;
+    letter-spacing: 1px;
+    color: #f53626;
+}
+.gallery .title h1 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+    
+}
+.gallery-grid .gallery-item{
+    padding: 20px;
+}
+.gallery-grid .gallery-item .gallery-figure{
+    position: relative;
+    overflow: hidden;
+   
+}
+.gallery-item .gallery-figure::after {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    display: block;
+    content: '';
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+    transform: skewX(-25deg);
+    transition: all .5s;
+    
+}
+.gallery-item:hover .gallery-figure::after{
+    
+    left: 100%;
+    
+}
+.gallery-grid .gallery-item img {
+    width: 100% ;
+    height: auto;
+    border-radius: 22px;
+    
+}
+
+/* Footer  */
+.footer {
+    background-color: #000c04;
+    color: darkgray;
+}
+.footer .container {
+    padding: 100px 0;
+}
+.footer .footer-row {
+    display: flex;
+    
+}
+.footer .left-item {
+    margin: 20px 0;
+    position: relative;
+}
+.footer .left-item:hover a{
+    color: #fff;
+    text-decoration:underline;
+    
+}
+.footer .footer-right {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 100px;
+    padding-left: 100px;
+}
+
+.footer .footer-right li {
+    margin: 20px 0;
+    list-style: none;
+}
+
+.footer .footer-top h3 {
+    color: #fff;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+.footer .footer-top strong {
+    display: inline-block;
+    font-weight: bolder;
+    font-size: 16px;
+    line-height: 28px;
+}
+.footer .footer-top a {
+    text-decoration: none;
+    color: darkgray;
+}
+
+.footer li:hover a{
+    text-decoration: underline;
+    color: #fff;
+}
+/* Footer Bottom  */
+.footer .footer-bottom {
+    text-align: center;
+    margin: 50px 0;
+    border-top: 1px solid rgba(103, 99, 99, 0.14);
+    padding: 50px 0;
+}
+.footer .footer-bottom a {
+    text-decoration: none;
+    color: #f53626;
+}
+
+/* VIDEO CSS */
+.video video {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    width: 500px;
+}
+
+
+@media screen and (max-width:1200px){
+    .video video{
+        max-width: 300px;
+    }
+}
