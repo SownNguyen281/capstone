@@ -25,6 +25,14 @@
     align-items: center;
     padding: 20px 0;
 }
+.header .navbar-toggler{
+    background-color: transparent;
+    border: none;
+    color: #189A46;  
+    display: none;   
+    font-size: 30px;  
+    padding-left: 100px;
+}
 .header .header-left a {
     text-decoration: none;
     color: #189a46;
@@ -260,9 +268,102 @@
     width: 500px;
 }
 
-
+/* reponsive */
+/* desktop :  */
 @media screen and (max-width:1200px){
-    .video video{
+
+    .blog .blog-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+    video {
         max-width: 300px;
     }
+}
+ /* tablet :  */
+ @media screen and (max-width:992px){
+    .header{
+        position: relative;
+    }
+    /* .header .navbar{
+        display: block;
+    } */
+    .blog .blog-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .blog-grid .blog-item{
+        max-width: 300px;
+        height: auto;
+        margin-bottom: 50px;
+    }
+    video {
+        max-width: 230px;
+    }
+}
+/* dien thoai xoay ngang  */
+@media screen and (max-width:768px) {
+    .header{
+        position: relative;
+    }
+    .header .navbar{
+        display: inline-block;
+    }
+    /* .header .header-right{
+        display: none;
+    }
+    .header .navbar-toggler{
+        display:inline-block;
+           
+    } */
+    .blog-grid .blog-item{
+        max-width: 230px;
+        height: auto;
+        margin-bottom: 50px;
+    }
+    video {
+        max-width: 200px;
+    }
+    .footer .footer-row {
+        display: block;
+    }
+    .footer .footer-right {
+        /* display: block; */
+       padding-left: 0;
+        text-align: center;
+    }
+}
+/* xoay doc */
+@media screen and (max-width:576px) {
+    /* chinh GRID ve kich thuoc goc  */
+    /* grid-column: initial;
+    grid-row: initial; */
+    .header .navbar{
+        display: inline-block;
+    }
+    .header .header-right{
+        display: none;
+    }
+    .header .navbar-toggler{
+        display: inline-block;
+        padding-left: 80px;   
+    }
+    .blog .blog-grid{
+        display: inline-block;
+    }
+    .blog-grid .blog-item{
+        max-width: 280px;
+        height: auto;
+        margin-bottom: 50px;
+    }
+    video {
+        max-width: 200px;
+    }
+    .footer .footer-row {
+        display: block;
+    }
+    .footer .footer-right {
+        display: block;
+       padding-left: 0;
+        text-align: center;
+    }
+    
 }
