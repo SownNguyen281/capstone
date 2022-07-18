@@ -1,0 +1,5 @@
+1.Lê Huỳnh Tuấn :
+	Page đã làm :	home, about, service
+2.Nguyễn Quốc Hoàng Sơn:
+	Page đã làm : 	gallery, blog, contact
+		
