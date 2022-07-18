@@ -62,6 +62,7 @@ ul {
     color: #fff;
     border-radius: 10px;
     border: #fff;
+    transition: all 1s;
 }
 .btn-ab:hover {
     color: #fff;

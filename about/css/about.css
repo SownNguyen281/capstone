@@ -18,7 +18,7 @@ ul {
 }
 h6 {
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 2em;
     letter-spacing: 1px;
     color: #f53626;
@@ -26,8 +26,8 @@ h6 {
 a {
     text-decoration: none;
     color: #0c0c0c;
-    font-size: 1.2em;
-    font-weight: 400;
+    /* font-size: 1.2em; */
+    font-weight: 500;
     transition: all .5s;
 }
 a:hover {
@@ -65,9 +65,12 @@ ul {
 .ct {
     padding-top: 90px;
     padding-bottom: 90px;
+    z-index: 10;
 }
 .mt-3 {
     margin-top: 30px;
+    color: #fff;
+    opacity: 0.7;
 }
 .container {
     margin: auto;
@@ -192,10 +195,22 @@ ul {
     position: relative;
     display: grid;
 }
+.our-history .feature::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    min-height: 100%;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    background-color: #0c0c0c;
+    opacity: .7;
+}
 .our-history .feature-1 {
     max-width: 640px;
     margin-left: 520px;
     margin-bottom: 80px;
+    
 }
 .our-history .feature-1 h3 {
     color: #fff;
@@ -215,6 +230,10 @@ ul {
     font-weight: 700;
     margin-bottom: 6px;
 
+}
+.history-a p{
+    color: #fff;
+    opacity: 0.7;
 }
 .our-history .history-p p {
     color: #fff;
